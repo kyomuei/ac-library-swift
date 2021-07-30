@@ -8,7 +8,7 @@ let package = Package(
         .library(
             name: "ac-library-swift",
             targets: [
-
+                "Atcoder",
             ])
     ],
     dependencies: [
@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "Atcoder",
             dependencies: [
-                
+
             ]),
         .target(name: "DSU"),
     ]
