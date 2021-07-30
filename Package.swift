@@ -17,5 +17,6 @@ let package = Package(
         .target(
             name: "atcoder",
             dependencies: []),
+        .target(name: "DSU"),
     ]
 )
