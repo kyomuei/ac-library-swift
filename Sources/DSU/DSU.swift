@@ -19,7 +19,7 @@ struct DSU {
         return vertices[v]
     }
 
-    mutating func isSame(_ u: Int, _ v: Int) {
+    mutating func isSame(_ u: Int, _ v: Int) -> Bool {
         assert(vertices.indices.contains(u))
         assert(vertices.indices.contains(v))
         return leader(of: u) == leader(of: v)
@@ -36,14 +36,14 @@ struct DSU {
         return x
     }
 
-    func groupSize(_ member: v) -> Int {
-        assert(vertices.indices.contains(v))
-        return -vertices[v]
+    func groupSize(_ member: Int) -> Int {
+        assert(vertices.indices.contains(member))
+        return -vertices[member]
     }
 
     mutating func groups() -> [[Int]] {
         var leaders = [Int](repeating: 0, count: vertices.count)
-        var groups = [Int](repeating: 0, count: n)
+        var groups = [Int](repeating: 0, count: vertices.count)
         for i in vertices.indices {
             leaders[i] = leader(of: i)
             groups[leaders[i]] += 1
