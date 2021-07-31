@@ -1,5 +1,5 @@
 extension Internal {
-    static func inverseGCD(_ a: Int, _ b: Int) -> (mod: Int, inverse: Int) {
+    static func inverseGCD(_ a: Int, _ b: Int) -> (gcd: Int, inverse: Int) {
         var s = b, t = safeMod(a, mod: b)
         if t == 0 { return (b, 0) }
         var m0 = 0, m1 = 1
