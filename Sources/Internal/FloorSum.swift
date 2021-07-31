@@ -2,7 +2,7 @@ extension Internal {
     /// - Parameters:
     ///     - n: `n < 2^32`
     ///     - m: `1 <= m < 2^32`
-    func floorSum(_ n: Int, _ m: Int, _ a: Int, _ b: Int) -> UInt {
+    static func floorSum(_ n: Int, _ m: Int, _ a: Int, _ b: Int) -> UInt {
         var answer: UInt = 0
         var n = UInt(n)
         var m = UInt(m)

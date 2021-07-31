@@ -2,7 +2,7 @@ extension Internal {
     /// - Parameters:
     ///     - n: n >= 0
     ///     - mod: mod > 0
-    func powMod(_ x: Int, to n: Int, mod: Int) -> Int {
+    static func powMod(_ x: Int, to n: Int, mod: Int) -> Int {
         assert(n >= 0)
         assert(mod > 0)
         if mod == 1 { return 0 }

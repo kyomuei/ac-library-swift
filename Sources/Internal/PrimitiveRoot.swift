@@ -1,5 +1,5 @@
 extension Internal {
-    func primitiveRoot(_ n: Int) -> Int {
+    static func primitiveRoot(_ n: Int) -> Int {
         switch n {
         case 2: return 1
         case 167772161, 469762049, 998244353: return 3

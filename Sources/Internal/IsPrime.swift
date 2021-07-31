@@ -3,7 +3,7 @@ extension Internal {
     /// # Reference
     /// M. Forisek and J. Jancina
     /// - Parameter n: n >= 0
-    func isPrime(_ n: Int) -> Bool {
+    static func isPrime(_ n: Int) -> Bool {
         assert(n >= 0)
         if n <= 1 { return false }
         if n == 2 || n == 7 || n == 61 { return true }
