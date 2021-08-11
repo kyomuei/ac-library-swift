@@ -16,6 +16,10 @@ struct SetmentTree<M: Monoid> {
         vertices[v] = M.operate(vertices[2 * v], vertices[2 * v + 1])
     }
     
+    init(vertexCount: Int) {
+        self.init(vertex: [M.SetType](repeating: M.identity, count: vertexCount))
+    }
+    
     init(vertex: [M.SetType]) {
         self.vertexCount = vertex.count
         self.depth = Internal.ceilPow2(vertex.count)
