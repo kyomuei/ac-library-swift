@@ -22,6 +22,7 @@ let package = Package(
         .target(name: "DSU"),
         .target(name: "LazySegmentTree"),
         .target(name: "Math"),
+        .target(name: "SCC"),
         .target(name: "SegmentTree"),
         .target(name: "String"),
     ]
