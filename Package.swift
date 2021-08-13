@@ -25,5 +25,6 @@ let package = Package(
         .target(name: "SCC"),
         .target(name: "SegmentTree"),
         .target(name: "String"),
+        .target(name: "TwoSAT"),
     ]
 )
