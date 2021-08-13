@@ -20,6 +20,7 @@ let package = Package(
 
             ]),
         .target(name: "DSU"),
+        .target(name: "FenwickTree"),
         .target(name: "LazySegmentTree"),
         .target(name: "Math"),
         .target(name: "SCC"),
