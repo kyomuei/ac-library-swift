@@ -1,7 +1,7 @@
 extension Internal {
     struct Queue<Element> {
 
-        private var payload: [Element]
+        private var payload: [Element] = []
 
         private var position: Int = 0
 
