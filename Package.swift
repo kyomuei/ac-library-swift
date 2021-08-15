@@ -23,6 +23,7 @@ let package = Package(
         .target(name: "FenwickTree"),
         .target(name: "LazySegmentTree"),
         .target(name: "Math"),
+        .target(name: "MaxFlow"),
         .target(name: "SCC"),
         .target(name: "SegmentTree"),
         .target(name: "String"),
